@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+body{
+    padding: 0 2rem;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar .tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background: url('../staticFolder/assets/elevated-view-laptop-stationeries-blue-backdrop.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo img{
+    height: 70px;
+    width: auto;
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2 {
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #000;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #000;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #000;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #000;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget label input {
+    margin-right: 3px;
+
+}
+
+.forget label a {
+    color: #000;
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+}
+
+.register {
+    font-size: .9em;
+    color: #000;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.section-1 {
+    padding: 1rem;
+    max-width: 500px;
+}
+
+.welcome {
+    font-size: 70px;
+    line-height: 1.2;
+}
+
+.section-1 p{
+    margin-top: 1rem;
+}
+
+.courses-section{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.courses {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.course-template {
+    padding: .3rem;
+    box-shadow: 0 0 4px  #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.course-image img{
+    width: 350px;
+    padding: 10px;
+}
+
+.details{
+    margin: 0 1rem;
+}
+
+.details p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.price-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+border-top: 1px solid #ccc;
+padding: 1rem 0;
+}
+
+.cart {
+    border: 1px solid blue;
+    background-color: #fff;
+    color: blue;
+    width: 200px;
+}
+
+@media screen and (max-width:600px) {
+
+    .main-section{
+        flex-direction: column-reverse;
+    }
+    
+}
